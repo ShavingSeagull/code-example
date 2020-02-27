@@ -1,7 +1,7 @@
 # O(n) time | O(1) space
 def sum_interval(array, start, stop):
-    if stop >= len(array): 
-        raise IndexError("The stop index is out of range")
+    if start >= len(array) or stop >= len(array): 
+        raise IndexError("The start/stop indicies are out of range")
 
     total = 0
 
